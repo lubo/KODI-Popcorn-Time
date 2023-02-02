@@ -1,7 +1,7 @@
 ﻿#!/usr/bin/python
 from http import HTTPStatus
 from http.client import HTTPConnection, HTTPSConnection, responses
-import zlib, simplejson, sys, socket, http, errno, xbmcaddon, xbmc, os, json
+import zlib, simplejson, sys, socket, http, errno, xbmcaddon, xbmcvfs, os, json
 from urllib.parse import urlencode, urlparse
 from kodipopcorntime.utils import Cache
 from kodipopcorntime.exceptions import HTTPError, ProxyError
@@ -11,7 +11,7 @@ from kodipopcorntime import favourites as _favs
 
 __addon__ = xbmcaddon.Addon()
 __addonname__ = __addon__.getAddonInfo('name')
-__addondir__ = xbmc.translatePath(__addon__.getAddonInfo('profile'))
+__addondir__ = xbmcvfs.translatePath(__addon__.getAddonInfo('profile'))
 
 _json_file = os.path.join(__addondir__, 'test.json')
 

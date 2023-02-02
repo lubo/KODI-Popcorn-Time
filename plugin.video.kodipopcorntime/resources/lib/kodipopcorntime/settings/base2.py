@@ -1,5 +1,5 @@
 ﻿#!/usr/bin/python
-import xbmc, sys, os, time, stat, shutil
+import xbmcvfs, sys, os, time, stat, shutil
 from . import SUBTITLE_ISO, QUALITIES, PUBLIC_TRACKERS
 from .addon import Addon
 from .base import _Base, _MetaClass
@@ -95,7 +95,7 @@ class _MetaClass2(_MetaClass):
         cls.media_cache_path = _path
 
     def _user_download_path(cls):
-        _path = xbmc.translatePath(__addon__.getSetting("%s_download_path"  %cls.mediaType))
+        _path = xbmcvfs.translatePath(__addon__.getSetting("%s_download_path"  %cls.mediaType))
         if _path:
             if _path.lower().startswith("smb://"):
                 if Platform.system != "windows":
@@ -145,7 +145,7 @@ class _MetaClass2(_MetaClass):
 
         if Platform.system == "android":
             existBinary(binary_path)
-            binary_path = ensure_android_binary_location(binary_path, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(xbmc.translatePath('special://xbmc')))), "files", __addon__.getAddonInfo('id'), binary))
+            binary_path = ensure_android_binary_location(binary_path, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(xbmcvfs.translatePath('special://xbmc')))), "files", __addon__.getAddonInfo('id'), binary))
 
         existBinary(binary_path)
         ensure_exec(binary_path)

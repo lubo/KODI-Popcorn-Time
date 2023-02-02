@@ -3,6 +3,7 @@ from urllib.request import Request, urlopen
 import os
 import xbmc
 import xbmcaddon
+import xbmcvfs
 import hashlib
 
 from kodipopcorntime.logging import log
@@ -10,7 +11,7 @@ from kodipopcorntime.logging import log
 
 __addon__ = xbmcaddon.Addon()
 __addonname__ = __addon__.getAddonInfo('name')
-__addondir__ = xbmc.translatePath(__addon__.getAddonInfo('profile'))
+__addondir__ = xbmcvfs.translatePath(__addon__.getAddonInfo('profile'))
 
 _json_file = os.path.join(__addondir__, 'favourites.json')
 _json_movie_file = os.path.join(__addondir__, 'test.json')

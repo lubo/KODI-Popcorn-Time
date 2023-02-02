@@ -2,6 +2,7 @@
 import os
 import sys
 import xbmc
+import xbmcvfs
 from datetime import date
 from kodipopcorntime.exceptions import Error
 from kodipopcorntime.logging import log, LOGLEVEL
@@ -57,7 +58,7 @@ class MetaAddon(_MetaClass):
         cls.language = xbmc.getLanguage(xbmc.ISO_639_1)
 
     def _cache_path(cls):
-        _path = xbmc.translatePath("special://profile/addon_data/%s/cache" % cls.id)
+        _path = xbmcvfs.translatePath("special://profile/addon_data/%s/cache" % cls.id)
         if not os.path.exists(_path):
             os.makedirs(_path)
             if not os.path.exists(_path):

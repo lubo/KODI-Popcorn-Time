@@ -1,5 +1,5 @@
 ﻿#!/usr/bin/python
-import os, sys, xbmc, xbmcgui, mimetypes, time, subprocess, socket, re
+import os, sys, xbmc, xbmcgui, xbmcvfs, mimetypes, time, subprocess, socket, re
 from urllib.parse import parse_qsl, urlparse
 from urllib.request import urlopen
 import xml.etree.ElementTree as ET
@@ -45,7 +45,7 @@ class OverlayText:
 
     def _calculate_the_size(self):
         # get skin resolution
-        tree = ET.parse(os.path.join(xbmc.translatePath("special://skin/"), "addon.xml"))
+        tree = ET.parse(os.path.join(xbmcvfs.translatePath("special://skin/"), "addon.xml"))
         res = tree.findall("./extension/res")[0]
         viewport_w = int(res.attrib["width"])
         viewport_h = int(res.attrib["height"])

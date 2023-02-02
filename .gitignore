@@ -8,3 +8,4 @@ ehthumbs.db
 .idea/
 __pycache__/
 *.zip
+/archive

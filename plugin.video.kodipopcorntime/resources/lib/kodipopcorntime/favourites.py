@@ -142,7 +142,7 @@ def _create_movie_favs():
     movie_favs1 = []
     for fav in movie_favs:
         log("(Favourites_movie) %s" % fav)
-        search = '%s/movie/%s' % ('https://popcorn-time.ga', fav['id'])
+        search = '%s/movie/%s' % ('https://shows.cf', fav['id'])
         req = Request(search, headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.66 Safari/537.36", "Accept-Encoding": "none"})
         response = urlopen(req)
         movie_fav = json.loads(response.read())

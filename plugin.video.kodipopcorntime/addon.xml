@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.kodipopcorntime" name="KODI Popcorn Time" version="2.0.1" provider-name="lubo">
+<addon id="plugin.video.kodipopcorntime" name="KODI Popcorn Time" version="1.0" provider-name="Tzagim">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -9,14 +9,15 @@
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <platform>all</platform>
-        <website>https://github.com/lubo/KODI-Popcorn-Time</website>
-        <forum>https://github.com/lubo/KODI-Popcorn-Time/issues</forum>
-        <source>https://github.com/lubo/KODI-Popcorn-Time</source>
+        <website>https://github.com/tzagim/KODI-Popcorn-Time</website>
+        <forum>https://github.com/tzagim/KODI-Popcorn-Time/issues</forum>
+        <source>https://github.com/tzagim/KODI-Popcorn-Time</source>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <summary lang="de_DE">Immediately stream movies, TV Shows and Animes.</summary>
         <summary lang="en_GB">Immediately stream movies, TV Shows and Animes.</summary>
         <summary lang="es_ES">Immediately stream movies, TV Shows and Animes.</summary>
         <summary lang="fr_FR">Immediately stream movies, TV Shows and Animes.</summary>
+        <summary lang="iw_IL">הזרמה מיידית סרטים, תוכניות טלוויזיה ואנימות.</summary>
         <summary lang="hr_HR">Trenutačno gledajte filmove, TV Serije i Anime.</summary>
         <summary lang="zh_CN">Immediately stream movies, TV Shows and Animes.</summary>
         <summary lang="nl_NL">Immediately stream movies, TV Shows and Animes.</summary>
@@ -27,6 +28,7 @@
         <description lang="de_DE">With KODI Popcorn Time you can search for movies, TV shows and Animes that you can see immediately in KODI. NOTE: KODI Popcorn Time will continue sharing content while watching a movie TV show or Anime.</description>
         <description lang="en_GB">With KODI Popcorn Time you can search for movies, TV shows and Animes that you can see immediately in KODI. NOTE: KODI Popcorn Time will continue sharing content while watching a movie TV show or Anime.</description>
         <description lang="es_ES">With KODI Popcorn Time you can search for movies, TV shows and Animes that you can see immediately in KODI. NOTE: KODI Popcorn Time will continue sharing content while watching a movie TV show or Anime.</description>
+        <description lang="iw_IL">עם KODI Popcorn Time תוכלו לחפש סרטים, תוכניות טלוויזיה ואנימות שתוכלו לראות מיד ב-KODI. הערה: KODI Popcorn Time ימשיך לשתף תוכן בזמן צפייה בתוכנית טלוויזיה בסרט או באנימה.</description>
         <description lang="fr_FR">With KODI Popcorn Time you can search for movies, TV shows and Animes that you can see immediately in KODI. NOTE: KODI Popcorn Time will continue sharing content while watching a movie TV show or Anime.</description>
         <description lang="hr_HR">Sa KODI Popcorn Time možete pretraživati filmove, TV serije i Anime koje možete odmah gledati u KODIJU. NAPOMENA: KODI Popcorn Time će nastaviti dijeliti sadržaj dok gledate film, TV seriju ili Anime.</description>
         <description lang="zh_CN">With KODI Popcorn Time you can search for movies, TV shows and Animes that you can see immediately in KODI. NOTE: KODI Popcorn Time will continue sharing content while watching a movie TV show or Anime.</description>
